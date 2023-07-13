@@ -34,7 +34,7 @@ class CounterStorage {
 }
 
 class FlutterCounter extends StatefulWidget {
-  const FlutterCounter({super.key, required this.storage});
+  const FlutterCounter({Key? key, required this.storage}) : super(key: key);
 
   final CounterStorage storage;
   @override
